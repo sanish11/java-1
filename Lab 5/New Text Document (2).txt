@@ -1,0 +1,36 @@
+import java.util.scanner;
+class Sphere{
+	final int pi=3.1416;
+	double r,a,v;
+	public static void main(String[]args)
+	{
+	Sphere sp=new Sphere();
+	
+	sp.GetData();
+	}
+	GetData()
+	{
+		System.out.println("enter value of radius:");
+		Scanner s=new Scanner();
+		r=s.nextDouble();
+		Area(r);
+	}
+	Area(Double r)
+	{
+		
+	 	a=4*pi*r*r;
+		DispData(a);
+	}
+	Volume(Double r)
+	{
+		v=1.33*pi*r*r*r;
+		DispData(v);
+	}
+	DispData(Double a,Double v)
+	{
+		System.out.println("Area:"+a +"Volume:"+v);
+	}
+	}		
+		
+	
+		
